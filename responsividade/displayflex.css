@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2? family= Alegreya+Sans & display=swap');
+.container
+{
+    display: flex;
+    height: 400px;
+    background: rgba(68, 67, 67, 0.2);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    flex-wrap: wrap; /*Wrap para os itens do flexbox serem encapsulados, nowrap faz o contrário */
+    flex-direction: row;
+    align-items: center; /* Alinhamento dos itens, com orientação linha */
+    /*align-content: space-around;  Alinhamento das linhas */
+    justify-content: center; /* Alinhamento dos itens, com orientação coluna */
+    padding: 10px;
+}
+.container > div
+{
+    background: #6fc3f3;
+    width: 20px;
+    margin: 10px;
+    padding: 50px;
+}
+.container > div:hover 
+{
+    background: rgb(206, 61, 186);
+}
+/*.container .element6
+{
+    /*flex-grow: 2; faz o elemento crescer 2 vezes mais rápido que os outros elementos */
+     /*flex-shrink: 0; Não deixa o elmento diminuir tanto quanto os outros elementos do container */
+    /*flex-bsis: 100px; define o comprimento inicial do elemento */
+    /*align-self: center; Faz a mesma função do align-items, só que sendo aplicada para um elemento } 
+*/
+/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */

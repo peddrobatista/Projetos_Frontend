@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+[wm-flappy] {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #00a8ff;
+    height: 30vmax;
+    max-width: 60vmax;
+    background-color: #00a8ff;
+    overflow: hidden;
+}
+.passaro {
+    position: absolute;
+    max-width: 3vmax;
+    left: calc(50% - 30px);
+}
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barreira .borda {
+    height: 2vmax;
+    width: 6vmax;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+.barreira .corpo {
+    height: 6vmax;
+    width: 5vmax;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5vmax;
+    color: #fff;
+    z-index: 100;
+}

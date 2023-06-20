@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+html {
+	background: url(../saneamentoimg/paper.jpeg) no-repeat center fixed;
+	background-size: cover;
+}
+/* Configurações da interface */
+.interface::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"]
+{
+	float: left;
+	padding: 15px;
+}
+/* Para celulares */
+[class*="col-"]
+{
+	width: 100%;
+}
+/* Configurações do cabeçalho */
+.cabecalho
+{
+	text-align: center;
+	position: relative;
+	margin-top: 78px;
+	font-size: 24px;
+	padding: 10px;
+	color: #fff;
+}
+/* Configurações da seção */
+.secao h1
+{
+	text-align: center;
+	font-size: 28px;
+	margin: 15px;
+	color: #fff;
+}
+/* Configurações do rodapé*/
+.rodape
+{
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+	color: #fff;
+}
+/* Configurações do menu*/
+#menu {
+	display: block;
+}
+#menu input {
+	display: none;
+}
+#menu > label {
+	display: none;
+}
+#menu ul {
+	display: flex;
+	list-style: none;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	flex-direction: row;
+	width: 100%;
+	height: 10%;
+	padding: 0;
+	margin: auto;
+	overflow: hidden;
+	background: rgba(61, 176, 243, 0.185);
+	backdrop-filter: blur(5px);
+}
+#menu li {
+	display: inline-block;
+	align-items: center;
+	padding: 0;
+	margin: auto;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 22pt;
+	padding-top: 10px;
+}
+#menu label ion-icon {
+	display: none;
+}
+#menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Alegreya Sans', sans-serif;
+	padding: 10px 20px 10px 20px;
+	border-radius: 4px
+}
+#menu li a:hover{
+	box-shadow: 0px 0px 3px #181717e0;
+	background: #706f6f0c;
+	transition: 0.2s;
+}
+@media only screen and (max-width: 800px) {
+	/* Configurações do menu para celulares */
+	/*-----*/
+	#menu ul {
+		flex-direction: column;
+		height: 10%;
+		transition: all 0.2s;
+	}
+	#menu ul li {
+		display: none;
+		justify-content: center;
+		text-align: center;
+		margin-top: 5px;
+		align-items: center;
+		width: 100%;
+	}
+	#menu > label {
+		display: block;
+		position: fixed;
+		border: none;
+		background: transparent;
+		margin: 0;
+		top: 6px;
+		left: 86%;
+		padding: 0;
+		cursor: pointer;
+		z-index: 10;
+	}
+	#menu > label ion-icon {
+		display: block;
+		color: #fff;
+		font-size: 50px;
+		transition: all 0.2s;
+	}
+	#menu label #ion2 {
+		display: none;
+	}
+	#menu #btnClick1:checked ~ ul {
+		height: 55%;
+	}
+	#menu #btnClick1:checked ~ ul > li {
+		display: block;
+		padding-top: 10px;
+	}
+	#menu #btnClick1:checked ~ label > ion-icon#ion1 {
+		display: none;
+	}
+	#menu #btnClick1:checked ~ label > ion-icon#ion2 {
+		display: block;
+	}
+}
+/* Configurações do iframe */
+.iframe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: transparent;
+}
+iframe:hover {
+	transition: all 0.5s;
+	transform: scale(1.09);
+	box-shadow: 0 0 5px rgba(88, 88, 88, 0.705);
+}
+.iframe > iframe {
+	max-width: 100%;
+	max-height: auto;
+	border-radius: 10px;
+}
+.responsive {
+	padding: 0 6px;
+	margin: auto;
+	width: 60%;
+} 
+@media only screen and (max-width: 800px) {
+	.responsive {
+	  width: 100%;
+	  margin: 6px 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+} 
+/*.iframe::after {
+	content: "";
+	display: table;
+	clear: both;
+}

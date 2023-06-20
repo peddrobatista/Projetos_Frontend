@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*	Configurações da página (FOLHA REFERENCIAL para TODAS as outras páginas)
+	Configurações da folha de estilo do site
+	Configurações do menu do site
+	Criado por João Pedro 11/04/2019	
+	Atualizado em 02/02/2022
+*/
+/* Configurações gerais*/
+*
+{
+    padding: 0;
+    margin: 0;
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+html {
+	background: url(piracicabaimg/imagem-fundo.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+.interface::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+/* Configurações do menu */
+#menu {
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
+	top: 0;
+	list-style: none;
+	background: rgba(139, 139, 139, 0.089);
+	backdrop-filter: blur(15px);
+	width: 100%;
+	height: 63px;
+	z-index: 10;
+}
+#menu ul {
+	margin-right: 20px;
+}
+#menu ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+	padding: 0;
+}
+#menu ul li a {
+    color: white;
+	background: rgba(73, 73, 73, 0.349);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+	transition: all 0.5s;
+}
+#menu ul li a:hover {
+	background: rgba(17, 245, 93, 0.568);
+}
+/*Configurações do cabeçalho do site*/
+.cabecalho {
+	margin-top: 63px;
+	padding: 50px 15px; /* cima/baixo, direito/esquerdo */
+	width: 100%;
+}
+.titulos {
+	color: rgba(255, 255, 255, 0.774);
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+	font-size: 24px;
+}
+/*Configurações do corpo do site*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.secao {
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+}
+.secao h1 {
+	font-size: 28px;
+	margin: 10px 0;
+	color: rgba(255, 255, 255, 0.774);
+}
+.secao p {
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.774);
+}
+/* Configurações do rodapé */
+.rodape {
+	color: rgba(255, 255, 255, 0.774);
+	padding: 15px 0;
+	text-align: center;
+	line-height: 1.5;
+}
+.rodape a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.774);
+}
+/*Configurações das fotos*/
+.galeria {
+	background: rgba(218, 217, 217, 0.062);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 15px;
+	border-radius: 15px;
+	transition: all 0.5s;
+}
+img:hover {
+	transform: scale(1.1);
+}
+.amostrafotos {
+	list-style: none;
+	display: inline-block;
+	margin: 15px 0;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.397);
+	border-radius: 5px;
+    box-shadow: 0 0 5px rgb(61, 61, 61);
+}
+.amostrafotos li {
+	float: left;
+	cursor: pointer;
+}
+.amostrafotos li label {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.568);
+	box-shadow: 0 0 3px rgba(73, 73, 73, 0.836);
+	border-radius: 5px;
+	padding: 8px;
+	margin: 1px;
+	font-size: 15px;
+}
+.amostrafotos li label:hover {
+	background: rgba(78, 240, 78, 0.986);
+}
+.amostrafotos li input {
+	display: none;
+}
+@media (max-width: 562px) {
+	/* Configurações do menu */
+	#menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#menu ul {
+		margin-right: 0;
+	}
+	#menu ul li a {
+		font-size: 15px;
+	}
+}

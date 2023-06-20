@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Switch</title>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+      <script>
+        const body = document.querySelector('body');
+        const slider = document.querySelector('.slider');
+        slider.onclick = function () {
+            slider.classList.toggle('active')
+            body.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>

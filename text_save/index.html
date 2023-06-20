@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script> <!--O script vai ser executado no final (defer)-->
+    <link rel="stylesheet" href="style.css">
+    <title>Salvando Texto com Arquivo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <textarea required placeholder="Digite alguma coisa para salvar..."></textarea>
+        <div class="file-options">
+            <div class="option file-name">
+                <label for="">File Name</label>
+                <input type="text" placeholder="Enter file name">
+            </div>
+            <div class="option save-as">
+                <label for="">Save as</label>
+                <div class="select-menu">
+                    <select name="" id="">
+                        <option value="text/plain">Text File (.txt)</option>
+                        <option value="text/javascript">JS File (.js)</option>
+                        <option value="text/html">HTML File (.html)</option>
+                        <option value="image/svg+xml">SVG File (.svg)</option>
+                        <option value="application/msword">DOC File (.doc)</option>
+                        <option value="application/vnd.ms-powerpoint">PPT (.ppt)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="save-btn">Save As Text File</button>
+    </div>
+</body>
+</html>

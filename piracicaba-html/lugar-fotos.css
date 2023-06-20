@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* Configurações Gerais */
+*
+{
+    padding: 0;
+    margin: 0;
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+html {
+	background: url(piracicabaimg/imagem-fundo.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+.interface::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+/* Configurações do menu */
+#menu {
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
+	top: 0;
+	list-style: none;
+	background: rgba(139, 139, 139, 0.089);
+	backdrop-filter: blur(15px);
+	width: 100%;
+	height: 63px;
+	z-index: 10;
+}
+#menu ul {
+	margin-right: 20px;
+}
+#menu ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+	padding: 0;
+}
+#menu ul li a {
+    color: white;
+	background: rgba(73, 73, 73, 0.349);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+	transition: all 0.5s;
+}
+#menu ul li a:hover {
+	background: rgba(17, 245, 93, 0.568);
+}
+/*Configurações do cabeçalho do site*/
+.cabecalho {
+	margin-top: 63px;
+	padding: 50px 15px; /* cima/baixo, direito/esquerdo */
+	width: 100%;
+}
+.titulos {
+	color: rgba(255, 255, 255, 0.774);
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+	font-size: 24px;
+}
+/* Configurações da seçao do site */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.secao {
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+}
+.secao h1 {
+	font-size: 28px;
+	margin: 10px 0;
+	color: rgba(255, 255, 255, 0.774);
+}
+/* Configurações do rodapé */
+.rodape {
+	color: rgba(255, 255, 255, 0.774);
+	padding: 15px 0;
+	text-align: center;
+	line-height: 1.5;
+}
+.rodape a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.774);
+}
+/* Configurações do album */
+#albumfotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 50px;
+	margin: 20px;
+	overflow: hidden;
+	background: rgba(218, 217, 217, 0.062);
+	backdrop-filter: blur(5px);
+	border-radius: 10px; 
+}
+#albumfotos li {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 7px;
+    box-shadow: 0 0 5px rgb(61, 61, 61);
+	
+}
+#albumfotos span {
+	border-radius: 3px;
+	padding: 5px;
+	margin-left: 5px;
+	background-color: rgba(0,0,0,.3);
+	line-height: 140px;
+}
+#albumfotos li:hover {
+	transition: 0.5s;
+	transform: scale(1.2);
+}
+#albumfotos span {
+	opacity: 0;
+}
+#albumfotos li:hover span {
+	transition: 0.5s;
+	opacity: 1;
+}
+#albumfotos #foto1 {
+	background: url(piracicabaimg/img1.jpg) no-repeat center;
+	background-size: cover;
+}
+#albumfotos li#foto2 {
+	background: url(piracicabaimg/img2.jpg) no-repeat center;
+	background-size: cover; 
+}
+#albumfotos li#foto3 {
+	background: url(piracicabaimg/img3.jpg) no-repeat center;
+	background-size: cover; 
+}
+#albumfotos li#foto4 {
+	background: url(piracicabaimg/img4.jpg) no-repeat center;
+	background-size: cover;
+}
+#albumfotos li#foto5 {
+	background: url(piracicabaimg/img5.jpg) no-repeat center;
+	background-size: cover;
+}
+#albumfotos li#foto6 {
+	background: url(piracicabaimg/img6.jpg) no-repeat center;
+	background-size: cover;
+}
+@media (max-width: 562px) {
+	/* Configurações do menu */
+	#menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#menu ul {
+		margin-right: 0;
+	}
+	#menu ul li a {
+		font-size: 15px;
+	}
+}

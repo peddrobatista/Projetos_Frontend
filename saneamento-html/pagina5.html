@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tudo sobre o saneamento básico</title>
+    <link rel="stylesheet" type="text/css" href="saneamentocss/p5.css"/>
+</head>	
+<body>
+<div class="interface">
+  <header class="cabecalho">
+    <hgroup id="grupotitulo">	
+      <h1>O Saneamento básico</h1>	
+      <h2>Tratamento de água e esgoto para todos</h2>
+    </hgroup> 
+    <nav id="menu">
+      <input type="checkbox" id="btnClick1">
+      <label for="btnClick1" class="checkbtn">
+          <ion-icon id="ion1" name="menu-outline"></ion-icon>
+          <ion-icon id="ion2" name="chevron-down-outline"></ion-icon>
+      </label>
+      <ul id="lista">
+          <li class="intro" style="order: 1;"><a href="index.html">Home</a></li>
+          <li class="intro" style="order: 2;"><a href="pagina2.html">Especificações</a></li>
+          <li class="intro" style="order: 3;"><a href="pagina3.html">Fotos</a></li>
+          <li class="intro" style="order: 4;"><a href="pagina4.html">Multimídia</a></li>
+          <li class="intro" style="order: 5;"><a href="pagina5.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="col-12">
+    <div class="secao">
+      <h1>Insira seus dados abaixo para podermos entra em contato com você</h1>
+      <form id="form1">
+          <fieldset class="dp"><legend>Dados Pessoais</legend> 
+            <p><label for="cN">Nome:&nbsp;</label><input type="text" name="tN" id="cN" placeholder="Nome"/></p> 
+            <p><label for="cID">Idade:&nbsp;</label><input type="date" name="tID" id="cID"/></p>
+            <fieldset class="sexo"><legend>Sexo</legend> 
+              <p><label for="cMsc">Masculino:&nbsp;</label><input type="radio" name="ts" id="cMsc"/></p> 
+              <p><label for="cFmn">Feminino:&nbsp;</label><input type="radio" name="ts" id="cFmn"/></p>
+            </fieldset>
+            <fieldset class="contatos"><legend>Contatos</legend>
+              <p><label for="cIml">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="email" name="tIml" id="cIml" size="30" placeholder="myname123@exemple.com"/></p>
+              <p><label for="cTlf">Telefone:&nbsp;&nbsp;</label><input type="number" name="tTlf" id="cTlf" placeholder="(DDD) 0000-0000"/></p>
+              <p><label for="cClr">Celular:&nbsp;&nbsp;&nbsp;</label><input type="number" name="tClr" id="cClr" placeholder="(DDD) 0000-0000"/></p>
+            </fieldset>
+            <fieldset class="endereco"><legend>Endereço</legend>
+              <p><label for="cLgdr">Logradouro:&nbsp;</label><input type="text" name="tLgdr" id="cLgdr" placeholder="Rua, Ave, Trav"/></p>
+              <p><label for="cNmr">Número:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="tNmr" id="cNmr" placeholder="Número da casa"/></p>
+              <p><label for="cEsd">Estado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="tEst" id="cEsd">
+                  <optgroup label="Região Norte">
+                    <option>Amazonas</option>
+                    <option>Pará</option>
+                    <option>Amapá</option>
+                    <option>Roraima</option>
+                    <option>Acre</option>
+                    <option>Rondônia</option>
+                    <option>Tocantins</option>
+                  </optgroup>
+                  <optgroup label="Região Nordeste">
+                    <option>Bahia</option>
+                    <option>Pernanbuco</option>
+                    <option>Sergipe</option>
+                    <option>Alagoas</option>
+                    <option>Paraiba</option>
+                    <option>Rio Grade do Norte</option>
+                    <option>Ceará</option>
+                    <option>Piauí</option>
+                    <option>Maranhão</option>
+                  </optgroup>
+                  <optgroup label="Região Sudeste">
+                    <option>Rio Grade de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Minas Gerais</option>
+                    <option>Espírito Santo</option>
+                  </optgroup>
+                  <optgroup label="Região Centro-Oeste">
+                    <option>Goiás</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>DF</option>
+                  </optgroup>
+                  <optgroup label="Região Sul">
+                    <option>Paraná</option>
+                    <option>Santa Catarina</option>
+                    <option>Rio Grande do Sul</option>
+                  </optgroup>
+                </select></p>
+              <p><label for="cCdd">Cidade:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="tCdd" id="cCdd" placeholder="Sua Cidade"/></p>
+            </fieldset>
+          </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="rodape"> 
+<p>Copyright 2018-by Pedro Batista</p> 
+<p>Facebook | Twitter</p>
+</footer>
+<script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 

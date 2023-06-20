@@ -1,0 +1,42 @@
+.container
+{
+    display: grid; /* o elemento passa a ser tratado a base de grids (contêiner de grade)*/
+    grid-template-columns: repeat(4, 1fr); /* Define o número de colunas do seu layout e largura de cada coluna */
+    background: rgba(68, 67, 67, 0.2);
+    padding: 10px;
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);/* Define o número de linhas do seu layout e largura de cada linha */
+   /* justify-items: center;  Alinhamento dos itens: start, center, end, stretch*/
+   align-items: stretch; /* mesma coisa do de cima*/
+}
+.element1
+{
+   grid-column: 1/5;
+}
+.element2
+{
+    grid-row: 2/4;
+}
+.element3 {
+    grid-area: 2 / 2 / 4 / 4; /* começa na linha 2 da linha e na linha 2 da coluna e terminha na linha 4 da linha e na linha 4 da coluna */
+}
+.element5
+{
+    grid-column: 4/5;
+}
+.element6
+{
+    grid-column: 1/5;
+}
+.container > div 
+{
+    background: #6fc3f3;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+    transition: 0.2s;
+}
+.container > div:hover
+{
+    background: rgb(206, 61, 186);
+}

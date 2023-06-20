@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="galery.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="gallery-section">
+		<div class="inner-width">
+			<h1>My Gallery</h1>
+			<div class="border"></div>
+			<div class="gallery">
+				<a href="../imagens_console/galeria-01.jpg" class="image">
+					<img src="../imagens_console/galeria-01.jpg" alt="">
+				</a>
+				<a href="../imagens_console/galeria-02.jpg" class="image">
+					<img src="../imagens_console/galeria-02.jpg" alt="">
+				</a>
+				<a href="../imagens_console/galeria-03.jpg" class="image">
+					<img src="../imagens_console/galeria-03.jpg" alt="">
+				</a>
+				<a href="../imagens_console/galeria-04.jpg" class="image">
+					<img src="../imagens_console/galeria-04.jpg" alt="">
+				</a>
+				<a href="../imagens_console/galeria-05.jpg" class="image">
+					<img src="../imagens_console/galeria-05.jpg" alt="">
+				</a>
+				<a href="../imagens_console/galeria-06.jpg" class="image">
+					<img src="../imagens_console/galeria-06.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".gallery").magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery:{
+				enabled: true
+			}
+		});
+	</script>
+</body>
+</html>

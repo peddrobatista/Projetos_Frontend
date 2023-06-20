@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="lugar-fotos.css">
+	<title>Piracicaba Fotos</title>
+</head>
+<body>
+	<div class="interface">
+		<header class="cabecalho">
+			<hgroup class="titulos">
+				<h1>Piracicaba Palmácia</h1>
+				<h2>Bem vindo ao lugarzinho mais calmo de Palmácia!!</h2>
+				<h3>Fotos</h3>
+			</hgroup>
+		</header>	
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lugar-fotos.html">Fotos</a></li>
+				<li><a href="lugar-about.html">Sobre</a></li>
+				<li><a href="lugar-talkus.html">Fale conosco</a></li>
+			</ul>
+		</nav>
+		<div class="col-12">
+			<div class="secao">
+				<h1>Venha conhecer nosso álbum de fotos</h1>
+				<ul id="albumfotos">
+					<li onclick="mostraFoto('piracicabaimg/img1.jpg')" id="foto1"><span>Veja o Exótico</span></li>
+					<li id="foto2"><span>Sinta a Natureza...</span></li>
+					<li id="foto3"><span>Explore...</span></li>
+					<li id="foto4"><span>Olhar Verde...</span></li>
+					<li id="foto5"><span>Olhar Azul...</span></li>
+					<li id="foto6"><span>Viva o natural...</span></li>
+				</ul>
+		    </div>
+		</div>
+		<footer class="rodape">
+			<p>Copyright &copy; 2019 by Pedro Batista</p>
+			<p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+		</footer>
+	</div>
+	<script>
+		function mostraFoto(foto) {
+			document.write.src ='piracicabaimg/img1.jpg';
+		}	
+	</script>
+</body>
+</html>
